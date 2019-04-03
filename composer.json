@@ -14,7 +14,7 @@
 		"symfony/orm-pack": "^1.0",
 		"symfony/swiftmailer-bundle": "^3.2",
 		"symfony/yaml": "4.2.*",
-		"md/sf4_locker-tool": "master"
+		"symfony-bundles/sf4_locker-tool": "dev-master"
 	},
     "config": {
         "preferred-install": {
@@ -70,7 +70,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git@gitlab.mobio.ru:md/sf4_locker-tool.git"
+            "url": "git@gitlab.mobio.ru:symfony-bundles/sf4_locker-tool.git"
         }
     ]
 }
