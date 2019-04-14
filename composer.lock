@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5143db507ef2ce07c0303b08e333f171",
+    "content-hash": "0ae125379f7d5ee80fb1ec4bd881d91a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1753,27 +1753,6 @@
             "time": "2019-03-10T07:52:41+00:00"
         },
         {
-            "name": "symfony-bundles/sf4_locker-tool",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.mobio.ru:symfony-bundles/sf4_locker-tool.git",
-                "reference": "31eeaefd44d2c00618f204d6596a63f03165ccdb"
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "FileLockerToolException.php",
-                    "FileLockerTool.php",
-                    "FileLockerProlongedTool.php"
-                ]
-            },
-            "time": "2019-04-03T12:29:30+00:00"
-        },
-        {
             "name": "symfony/cache",
             "version": "v4.2.5",
             "source": {
@@ -2492,16 +2471,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.2.0",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "7f04fb50c5da6d020e4df743b4c764c188bb24bf"
+                "reference": "41c5b29e07778942a76e7a22dbc3f6d62a42dc6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/7f04fb50c5da6d020e4df743b4c764c188bb24bf",
-                "reference": "7f04fb50c5da6d020e4df743b4c764c188bb24bf",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/41c5b29e07778942a76e7a22dbc3f6d62a42dc6e",
+                "reference": "41c5b29e07778942a76e7a22dbc3f6d62a42dc6e",
                 "shasum": ""
             },
             "require": {
@@ -2537,7 +2516,7 @@
                 }
             ],
             "description": "Composer plugin for Symfony",
-            "time": "2019-02-21T11:31:25+00:00"
+            "time": "2019-04-11T12:36:26+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -3444,6 +3423,71 @@
             "time": "2019-03-30T15:58:42+00:00"
         },
         {
+            "name": "symtools/sf4_locker-tool",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.mobio.ru:symtools/sf4_locker-tool.git",
+                "reference": "2168f3c65cc833e382da3a13f18f5f87a933e2e8"
+            },
+            "require": {
+                "php": "^7.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "FileLockerToolException.php",
+                    "FileLockerTool.php",
+                    "FileLockerProlongedTool.php"
+                ]
+            },
+            "time": "2019-04-14T08:37:10+00:00"
+        },
+        {
+            "name": "symtools/sf4_useful-tools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.mobio.ru:symtools/sf4_useful-tools.git",
+                "reference": "8788f854485c9d786df66dec202b0f263c79413f"
+            },
+            "require": {
+                "php": "^7.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "UsefulTools\\": ""
+                },
+                "files": [
+                    "Arrayable.php"
+                ]
+            },
+            "time": "2019-04-14T08:40:45+00:00"
+        },
+        {
+            "name": "symtools/sf4_useful-tools-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.mobio.ru:symtools/sf4_useful-tools-bundle.git",
+                "reference": "10c5b104bd45fbdc98149d50fc2ac0376df14809"
+            },
+            "require": {
+                "php": "^7.2.0",
+                "symfony/framework-bundle": "4.2.*",
+                "symfony/orm-pack": "^1.0",
+                "symtools/sf4_useful-tools": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symtools\\UsefulToolsBundle\\": ""
+                }
+            },
+            "time": "2019-04-14T08:44:23+00:00"
+        },
+        {
             "name": "zendframework/zend-code",
             "version": "3.3.1",
             "source": {
@@ -3922,12 +3966,14 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "symfony-bundles/sf4_locker-tool": 20
+        "symtools/sf4_locker-tool": 20,
+        "symtools/sf4_useful-tools": 20,
+        "symtools/sf4_useful-tools-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1.3",
+        "php": "^7.2.0",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },

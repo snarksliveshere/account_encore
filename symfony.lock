@@ -310,6 +310,15 @@
     "symfony/yaml": {
         "version": "v4.2.5"
     },
+    "symtools/sf4_locker-tool": {
+        "version": "dev-master"
+    },
+    "symtools/sf4_useful-tools": {
+        "version": "dev-master"
+    },
+    "symtools/sf4_useful-tools-bundle": {
+        "version": "dev-master"
+    },
     "zendframework/zend-code": {
         "version": "3.3.1"
     },

@@ -3,7 +3,7 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-		"php": "^7.1.3",
+		"php": "^7.2.0",
 		"ext-ctype": "*",
 		"ext-iconv": "*",
 		"symfony/console": "4.2.*",
@@ -15,6 +15,7 @@
 		"symfony/swiftmailer-bundle": "^3.2",
 		"symfony/yaml": "4.2.*",
 		"symtools/sf4_locker-tool": "dev-master",
+		"symtools/sf4_useful-tools": "dev-master",
         "symtools/sf4_useful-tools-bundle": "dev-master"
 	},
     "config": {
@@ -72,6 +73,10 @@
         {
             "type": "git",
             "url": "git@gitlab.mobio.ru:symtools/sf4_locker-tool.git"
+        },
+        {
+            "type": "git",
+            "url": "git@gitlab.mobio.ru:symtools/sf4_useful-tools.git"
         },
         {
             "type": "git",
