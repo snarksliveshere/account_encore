@@ -316,6 +316,9 @@
     "symtools/sf4_locker-tool": {
         "version": "dev-master"
     },
+    "symtools/sf4_symfony-bash": {
+        "version": "dev-master"
+    },
     "symtools/sf4_useful-tools": {
         "version": "dev-master"
     },

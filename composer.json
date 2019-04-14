@@ -17,7 +17,8 @@
 		"symtools/sf4_locker-tool": "dev-master",
 		"symtools/sf4_useful-tools": "dev-master",
         "symtools/sf4_error-handler-bundle": "dev-master",
-        "symtools/sf4_useful-tools-bundle": "dev-master"
+        "symtools/sf4_useful-tools-bundle": "dev-master",
+        "symtools/sf4_symfony-bash": "dev-master"
 	},
     "config": {
         "preferred-install": {
@@ -86,6 +87,10 @@
         {
             "type": "git",
             "url": "git@gitlab.mobio.ru:symtools/sf4_useful-tools-bundle.git"
+        },
+        {
+            "type": "git",
+            "url": "git@gitlab.mobio.ru:symtools/sf4_symfony-bash.git"
         }
     ]
 }
