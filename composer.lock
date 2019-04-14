@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ae125379f7d5ee80fb1ec4bd881d91a",
+    "content-hash": "ccf5b7dd2f236601e45c814ed2895ce1",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3423,6 +3423,28 @@
             "time": "2019-03-30T15:58:42+00:00"
         },
         {
+            "name": "symtools/sf4_error-handler-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.mobio.ru:symtools/sf4_error-handler-bundle.git",
+                "reference": "da6bafcbf852c4d9dfcdcce15633fdc5a1fb78b6"
+            },
+            "require": {
+                "php": "^7.2.0",
+                "symfony/framework-bundle": "4.2.*",
+                "symfony/swiftmailer-bundle": "^3.2",
+                "symtools/sf4_locker-tool": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mobio\\ErrorHandlerBundle\\": ""
+                }
+            },
+            "time": "2019-04-14T11:00:51+00:00"
+        },
+        {
             "name": "symtools/sf4_locker-tool",
             "version": "dev-master",
             "source": {
@@ -3968,6 +3990,7 @@
     "stability-flags": {
         "symtools/sf4_locker-tool": 20,
         "symtools/sf4_useful-tools": 20,
+        "symtools/sf4_error-handler-bundle": 20,
         "symtools/sf4_useful-tools-bundle": 20
     },
     "prefer-stable": false,

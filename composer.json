@@ -16,6 +16,7 @@
 		"symfony/yaml": "4.2.*",
 		"symtools/sf4_locker-tool": "dev-master",
 		"symtools/sf4_useful-tools": "dev-master",
+        "symtools/sf4_error-handler-bundle": "dev-master",
         "symtools/sf4_useful-tools-bundle": "dev-master"
 	},
     "config": {
@@ -77,6 +78,10 @@
         {
             "type": "git",
             "url": "git@gitlab.mobio.ru:symtools/sf4_useful-tools.git"
+        },
+        {
+            "type": "git",
+            "url": "git@gitlab.mobio.ru:symtools/sf4_error-handler-bundle.git"
         },
         {
             "type": "git",
