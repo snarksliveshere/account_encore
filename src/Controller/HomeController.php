@@ -5,17 +5,15 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ZController extends AbstractController
+class HomeController extends AbstractController
 {
     /**
      * @Route("/home", name="home")
-     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function index()
     {
         return $this->render('home/index.html.twig', [
-            'controller_name' => 'ZController'
+            'controller_name' => 'HomeController',
         ]);
-
     }
 }

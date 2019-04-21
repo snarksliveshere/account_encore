@@ -1,28 +1,43 @@
 {
-	"name": "account_dashboard",
     "type": "project",
     "license": "proprietary",
     "require": {
-		"php": "^7.2.0",
-		"ext-ctype": "*",
-		"ext-iconv": "*",
-		"symfony/console": "4.2.*",
-		"symfony/dotenv": "4.2.*",
-		"symfony/flex": "^1.1",
-		"symfony/framework-bundle": "4.2.*",
-		"symfony/monolog-bundle": "^3.3",
-		"symfony/orm-pack": "^1.0",
-		"symfony/security-bundle": "4.2.*",
-		"symfony/swiftmailer-bundle": "^3.2",
-		"symfony/twig-bundle": "4.2.*",
-		"symfony/webpack-encore-bundle": "^1.5",
-		"symfony/yaml": "4.2.*",
-		"symtools/sf4_error-handler-bundle": "dev-master",
-		"symtools/sf4_locker-tool": "dev-master",
-		"symtools/sf4_symfony-bash": "dev-master",
-		"symtools/sf4_useful-tools": "dev-master",
-		"symtools/sf4_useful-tools-bundle": "dev-master"
-	},
+        "php": "^7.1.3",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "sensio/framework-extra-bundle": "^5.1",
+        "symfony/asset": "4.2.*",
+        "symfony/console": "4.2.*",
+        "symfony/dotenv": "4.2.*",
+        "symfony/expression-language": "4.2.*",
+        "symfony/flex": "^1.1",
+        "symfony/form": "4.2.*",
+        "symfony/framework-bundle": "4.2.*",
+        "symfony/monolog-bundle": "^3.1",
+        "symfony/orm-pack": "*",
+        "symfony/process": "4.2.*",
+        "symfony/security-bundle": "4.2.*",
+        "symfony/serializer-pack": "*",
+        "symfony/swiftmailer-bundle": "^3.1",
+        "symfony/translation": "4.2.*",
+        "symfony/twig-bundle": "4.2.*",
+        "symfony/validator": "4.2.*",
+        "symfony/web-link": "4.2.*",
+        "symfony/webpack-encore-bundle": "^1.5",
+        "symfony/yaml": "4.2.*",
+        "symtools/sf4_error-handler-bundle": "dev-master",
+        "symtools/sf4_locker-tool": "dev-master",
+        "symtools/sf4_useful-tools": "dev-master",
+        "symtools/sf4_useful-tools-bundle": "dev-master",
+        "symtools/sf4_multi-project-bundle": "dev-master"
+    },
+    "require-dev": {
+        "symfony/debug-pack": "*",
+        "symfony/maker-bundle": "^1.0",
+        "symfony/profiler-pack": "*",
+        "symfony/test-pack": "*",
+        "symfony/web-server-bundle": "4.2.*"
+    },
     "config": {
         "preferred-install": {
             "*": "dist"
@@ -68,12 +83,6 @@
             "require": "4.2.*"
         }
     },
-    "require-dev": {
-		"symfony/maker-bundle": "^1.11",
-		"symfony/phpunit-bridge": "4.2.*",
-		"symfony/var-dumper": "4.2.*",
-		"symfony/web-server-bundle": "4.2.*"
-	},
     "repositories": [
         {
             "type": "git",
@@ -93,7 +102,8 @@
         },
         {
             "type": "git",
-            "url": "git@gitlab.mobio.ru:symtools/sf4_symfony-bash.git"
+            "url": "git@gitlab.mobio.ru:symtools/sf4_multi-project-bundle.git"
         }
     ]
+
 }

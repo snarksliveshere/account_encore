@@ -6,9 +6,9 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %}
-            HELLO
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            {{  encore_entry_script_tags('app') }}
         {% endblock %}
-        {% block javascripts %}{% endblock %}
     </body>
 </html>
