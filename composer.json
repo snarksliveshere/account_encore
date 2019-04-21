@@ -15,6 +15,7 @@
 		"symfony/security-bundle": "4.2.*",
 		"symfony/swiftmailer-bundle": "^3.2",
 		"symfony/twig-bundle": "4.2.*",
+		"symfony/webpack-encore-bundle": "^1.5",
 		"symfony/yaml": "4.2.*",
 		"symtools/sf4_error-handler-bundle": "dev-master",
 		"symtools/sf4_locker-tool": "dev-master",
